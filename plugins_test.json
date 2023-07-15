@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Purpur",
+        "target_version": [
+            {
+                "minecraft": "1.19.4",
+                "plugin": null
+            }
+        ],
+        "url": "https://api.purpurmc.org/v2/purpur/1.19.4/latest/download",
+        "source": "direct",
+        "post_processors": [
+            "versionjson"
+        ]
+    },
+    {
+        "name": "Fabric",
+        "target_version": [
+            {
+                "minecraft": "1.19.4",
+                "plugin": "0.14.*"
+            },
+            {
+                "minecraft": "1.20.1",
+                "plugin": "0.14.*"
+            }
+        ],
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.19.4",
+        "source": "fabricmc",
+        "post_processors": [
+            "fabricmc"
+        ]
+    },
+    {
+        "name": "Waterfall",
+        "target_version": [
+            {
+                "minecraft": "1.19.*",
+                "plugin": null
+            }
+        ],
+        "url": "https://papermc.io/api/v2/projects/waterfall/version_group/1.19/builds",
+        "source": "papermc",
+        "post_processors": null,
+        "file_filter": "waterfall-1.19-*.jar"
+    },
+    {
+        "name": "CMIB",
+        "url": "https://zrips.net/cmib/",
+        "source": "zrips",
+        "post_processors": [
+            "plugin"
+        ]
+    },
+    {
+        "name": "CoreProtect",
+        "url": "https://modrinth.com/plugin/coreprotect/",
+        "source": "modrinth",
+        "post_processors": [
+            "plugin"
+        ]
+    },
+    {
+        "name": "goPaint",
+        "url": "https://ci.athion.net/job/goPaint-1.14+/",
+        "source": "jenkins",
+        "post_processors": [
+            "plugin"
+        ],
+        "file_filter": "goPaint-*.jar"
+    }
+]
